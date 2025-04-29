@@ -10,11 +10,11 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-white py-10 md:py-20">
+    <footer className="bg-[#082237] py-10 md:py-20">
       <div className="containerX">
-        <div className="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-7 min-[1120px]:grid-cols-11 gap-10 md:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 min-[1120px]:grid-cols-4 gap-10 md:gap-6">
           {/* Inquiries */}
-          <div className="col-span-2 md:col-span-3 flex items-center sm:items-start flex-col">
+          <div className=" text-white col-span-1 md:col-span-2 flex items-center sm:items-start flex-col">
             <p
               className={cn(
                 "footer_el_title text-center sm:text-start font-scoutcond"
@@ -30,7 +30,7 @@ const Footer = () => {
               {footerData.inquiries.address}
             </p>
             <div className="flex items-center gap-6 mt-4 md:mt-6">
-              <div className="h-8 w-8 rounded-full bg-natural-100 flex_center">
+              <div className="h-8 w-8 rounded-full bg-white flex_center">
                 <CallIcon className="h-[14px] w-[14px] !shrink-0" />
               </div>
               <p className="footer_el_text">{footerData.inquiries.phone}</p>
@@ -44,7 +44,7 @@ const Footer = () => {
           </div>
 
           {/* Company Info */}
-          <div className="col-span-2 flex items-center sm:items-start flex-col">
+          <div className=" text-white col-span-2 md:col-span-1 flex items-center sm:items-start flex-col">
             <p
               className={cn(
                 "footer_el_title text-center sm:text-start font-scoutcond"
@@ -69,7 +69,7 @@ const Footer = () => {
           </div>
 
           {/* Services */}
-          <div className="col-span-2 flex items-center sm:items-start flex-col">
+          <div className=" text-white col-span-2 md:col-span-1 flex items-center sm:items-start flex-col">
             <p
               className={cn(
                 "footer_el_title text-center sm:text-start font-scoutcond"
@@ -93,55 +93,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Support */}
-          <div className="col-span-2 flex items-center sm:items-start flex-col">
-            <p
-              className={cn(
-                "footer_el_title text-center sm:text-start font-scoutcond"
-              )}
-            >
-              {footerData.support.title}
-            </p>
-            <ul className="mt-4 md:mt-10">
-              {footerData.support.links.map((link, index) => (
-                <li key={index}>
-                  <Link
-                    href={link.href}
-                    className={cn(
-                      "footer_el_text block mb-2 text-center sm:text-start font-inter"
-                    )}
-                  >
-                    {link.text}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Resources */}
-          <div className="col-span-2 flex items-center sm:items-start flex-col">
-            <p
-              className={cn(
-                "footer_el_title text-center sm:text-start font-scoutcond"
-              )}
-            >
-              {footerData.resources.title}
-            </p>
-            <ul className="mt-4 md:mt-10">
-              {footerData.resources.links.map((link, index) => (
-                <li key={index}>
-                  <Link
-                    href={link.href}
-                    className={cn(
-                      "footer_el_text block mb-2 text-center sm:text-start font-inter"
-                    )}
-                  >
-                    {link.text}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+         
         </div>
 
       

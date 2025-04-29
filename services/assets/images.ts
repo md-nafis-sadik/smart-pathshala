@@ -68,3 +68,6 @@ export { default as LogoBook } from "@/public/images/logo-book.png";
 export { default as Sponsor4 } from "@/public/images/sponsors/institute-4.png";
 export { default as LaptopProject } from "@/public/images/project/Laptop.png";
 export { default as FeatureImage } from "@/public/images/project/features-mobile.png";
+export { default as BenifitsImage1 } from "@/public/images/project/benifits1.png";
+export { default as BenifitsImage2 } from "@/public/images/project/benifits2.png";
+export { default as BenifitsImage3 } from "@/public/images/project/benifits3.png";

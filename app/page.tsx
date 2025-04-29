@@ -4,7 +4,7 @@ import Team from "@/components/team/Team";
 import OurJournal from "@/components/journal/JournalHome";
 import Products from "@/components/products/Products";
 import HeroHome from "@/components/hero/HeroHome";
-import ProjectsHome from "@/components/projects/ProjectsHome";
+import EffortLessManagement from "@/components/projects/EffortLessManagement";
 import ServicesHome from "@/components/services/ServicesHome";
 import WorkCultureHome from "@/components/workCulture/WorkCultureHome";
 import PricingHome from "@/components/pricing/PricingHome";
@@ -12,6 +12,8 @@ import StatisticsHome from "@/components/statistics/StatisticsHome";
 import IntroHome from "@/components/intro/IntroHome";
 import MarqueeHome from "@/components/marquee/MarqueeHome";
 import FeaturesHome from "@/components/projects/FeaturesHome";
+import OurGoals from "@/components/home/OurGoals";
+import Benifits from "@/components/projects/Benefits";
 
 const HomePage = () => {
   return (
@@ -28,10 +30,12 @@ const HomePage = () => {
         />
       </div> */}
       <IntroHome />
-      <ProjectsHome />
+      <EffortLessManagement />
 
-      <WorkCultureHome />
+      <OurGoals />
+      
       <FeaturesHome />
+      <Benifits/>
       <Testimonial />
 
 

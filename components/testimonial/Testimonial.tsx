@@ -23,10 +23,13 @@ const Testimonial = () => {
   return (
     <div className="containerX w-full py-20 md:py-[120px] relative">
       <div className="w-fit relative mx-auto h-fit">
-        <SectionHeader dark text="See How We've Made" />
-        <SectionHeader dark text="a Difference" />
+      <div>
+    <h2 className="text-center text-3xl md:text-[50px] xl:text-[64px] font-bold text-gray-900">Our Goals</h2>
+          <p className="text-center mt-6 text-gray-600 text-base">
+            Setting the Path for a Smarter, More Connected Future in Education
+          </p>
+          </div>
 
-        <QuoteStraightIcon className="absolute -top-[20%] -right-[14%] w-[20%] z-[-1] h-auto !shrink-0" />
       </div>
 
       {/* CAROUSEL */}

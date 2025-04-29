@@ -78,7 +78,7 @@ export default {
         skyish: {
           50: "#FFF8ED",
           100: "#FFFCC5",
-          200: "#FFFA85",
+          200: "#F0F8FF",
           300: "#FFF146",
           400: "#FFE31B",
           500: "#FFC400",

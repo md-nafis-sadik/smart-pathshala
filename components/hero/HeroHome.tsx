@@ -14,23 +14,19 @@ import colors from "@/lib/colors";
 
 const HeroHome = () => {
   return (
-    <section className="containerX w-full pt-10 md:pt-20 lg:pt-[140px] pb-20 lg:pb-[20px] relative">
-    <div className="flex flex-col md:flex-row gap-10">
+    <section className="containerX font-[600] w-full pt-10 md:pt-20 lg:pt-[140px] pb-20 lg:pb-[20px] relative  xl:px-16 2xl:px-20">
+    <div className="flex flex-col lg:flex-row gap-10">
       {/* Left portion */}
-      <div className="flex flex-col w-full md:w-[50%]">
+      <div className="flex flex-col w-full lg:w-[50%]  text-center lg:text-left">
 
-      <TextFadeIn
-          text="The Future of"
-          className="text-3xl md:text-[80px] !leading-[1.2] mt-6 md:mt-10 text-text-800"
-        />
-        <TextFadeIn
-          text="Education Management"
-          className="text-3xl md:text-[80px] font-extrabold !leading-[1.2] mt-1 md:mt-2 text-text-800"
-        />
+      <div className="text-4xl md:text-[50px] lg:text-[65px] xl:text-[80px] !leading-[1] mt-6 md:mt-10 text-text-800 font-semibold"
+        >The Future of</div>
+        <div className="text-4xl md:text-[50px] lg:text-[65px] xl:text-[80px] font-extrabold !leading-[1] mt-3 md:mt-2 text-text-800"
+        >Education Management</div>
 
-        <p className="mt-4 text-sm md:text-lg font-light text-gray-700">A Powerful School & College Management System Designed to Streamline Administration, Enhance Learning, and Connect Everyone Seamlessly</p>
+        <p className="mt-5 text-base md:text-lg font-light text-gray-700">A Powerful School & College Management System Designed to Streamline Administration, Enhance Learning, and Connect Everyone Seamlessly</p>
 
-        <div className="mt-10 flex items-center gap-2 md:gap-4">
+        <div className="mt-10 flex items-center justify-center lg:justify-start gap-2 md:gap-4">
           <Button className="w-fit group bg-skyish-700 py-2.5">
             <span className="!leading-none py-1">Get Started</span>
           </Button>
@@ -38,7 +34,7 @@ const HeroHome = () => {
       </div>
 
       {/* Right portion */}
-      <div className="w-full md:w-[50%] flex justify-end relative overflow-hidden">
+      <div className="w-full lg:w-[50%] flex justify-center lg:justify-end relative overflow-hidden">
       <Image
   alt="hero star glass image"
   src={images.heroPathshala}
