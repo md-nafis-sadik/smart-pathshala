@@ -42,7 +42,7 @@ const RootLayout = ({
         <Footer />
         <div className="bg-[#082237]">
       <div className="flex flex-col lg:flex-row items-center justify-between  containerX py-6 ">
-          <div className="text-white pb-5 lg:pb-0">© Copyright 2025 <a href="/" className="text-skyish-700">Smart Pathshala</a> | All rights are reserved</div>
+          <div className="text-white pb-5 lg:pb-0">© Copyright 2025 <Link href="/" className="text-skyish-700">Smart Pathshala</Link> | All rights are reserved</div>
           <div className="flex items-center gap-4">
             <div><Link href="/"><FacebookLineIcon/></Link></div>
             <div><Link href="/"><TwitterLineIcon/></Link></div>
