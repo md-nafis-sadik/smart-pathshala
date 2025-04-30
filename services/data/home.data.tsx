@@ -18,45 +18,35 @@ import {
 
 export const faqData = [
   {
-    question: "What services does Netro Creative offer?",
+    category: "General Information",
+    question: "What is Smart Pathshala?",
     answer:
-      "Netro Creative offers a wide range of services including custom software development, mobile app development, web application development, enterprise software solutions, software consulting, and ongoing maintenance and support.",
+      "Smart Pathshala is a modern school and college management system designed to digitalize and simplify institutional administration, helping schools, teachers, students, and parents stay connected.",
   },
   {
-    question: "What industries does Netro Creative specialize in?",
+    category: "General Information",
+    question: "Can Smart Pathshala be used for colleges as well?",
     answer:
-      "Netro Creative specializes in a wide range of industries, including finance, healthcare, e-commerce, education, and more. We tailor our services to meet the unique needs of each industry.",
+      "Yes of course.",
   },
   {
+    category: "General Information",
     question:
-      "How does Netro Creative ensure the quality of its software products?",
+      " Is Smart Pathshala available as a mobile app?",
     answer:
-      "You can reach out to Netro Creative by email at 0o9oX@example.com or by filling out the contact form on our website. We look forward to hearing from you and discussing your project needs.",
+      "Yes of course.",
   },
   {
-    question: "What is Netro Creative's development process?",
+    category: "General Information",
+    question: "How secure is Smart Pathshala?",
     answer:
-      "You can reach out to Netro Creative by email at 0o9oX@example.com or by filling out the contact form on our website. We look forward to hearing from you and discussing your project needs.",
+      "Very secure",
   },
   {
-    question: "How does Netro Creative handle data security and privacy?",
+    category: "General Information",
+    question: "How can I get started with Smart Pathshala?",
     answer:
-      "You can reach out to Netro Creative by email at 0o9oX@example.com or by filling out the contact form on our website. We look forward to hearing from you and discussing your project needs.",
-  },
-  {
-    question: "Does Netro Creative provide ongoing support and maintenance?",
-    answer:
-      "You can reach out to Netro Creative by email at 0o9oX@example.com or by filling out the contact form on our website. We look forward to hearing from you and discussing your project needs.",
-  },
-  {
-    question: "What are Netro Creative's pricing models?",
-    answer:
-      "You can reach out to Netro Creative by email at 0o9oX@example.com or by filling out the contact form on our website. We look forward to hearing from you and discussing your project needs.",
-  },
-  {
-    question: "How can I get started with Netro Creative?",
-    answer:
-      "You can reach out to Netro Creative by email at 0o9oX@example.com or by filling out the contact form on our website. We look forward to hearing from you and discussing your project needs.",
+      "By enrolling to our platform.",
   },
 ];
 

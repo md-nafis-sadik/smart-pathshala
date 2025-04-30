@@ -11,7 +11,7 @@ const LetsTalkHome = () => {
     <section className="relative">
       {/* Background image + gradient overlay */}
       <div className="absolute inset-0 bg-[url('/images/project/footer-background.jpg')] bg-cover bg-center" />
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-[#082237]" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-[#183144]" />
 
       {/* Content container */}
       <div className="relative z-10 containerX py-[60px] md:py-20 items-center space-y-6 justify-between">
@@ -26,7 +26,7 @@ const LetsTalkHome = () => {
         </div>
 
         <div className="flex justify-center w-full">
-          <form className="rounded-full border border-[#494949] ps-6 py-1 pe-1 md:pe-3 h-[54px] md:h-[70px] flex items-center justify-between gap-4 bg-white w-full max-w-[540px]">
+          <form className="rounded-full border border-[#494949] ps-6 py-1 pe-1 md:pe-3 h-[54px] md:h-[65px] flex items-center justify-between gap-4 bg-white w-full max-w-[540px]">
             <input
               type="email"
               placeholder="Enter your email address"
@@ -36,7 +36,7 @@ const LetsTalkHome = () => {
             />
             <Button
               type="submit"
-              className="px-5 py-2 md:py-3 h-[38px] md:h-[46px] bg-skyish-700"
+              className="px-5 py-2 md:py-3 h-[38px] md:h-[46px] bg-skyish-700 hover:bg-sky-600"
             >
               <span>Submit</span>
             </Button>

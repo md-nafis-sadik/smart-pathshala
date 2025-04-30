@@ -14,7 +14,8 @@ import colors from "@/lib/colors";
 
 const HeroHome = () => {
   return (
-    <section className="containerX font-[600] w-full pt-10 md:pt-20 lg:pt-[140px] pb-20 lg:pb-[20px] relative  xl:px-16 2xl:px-20">
+    <section className="bg-[url('/images/patterns/hero-bg.png')]  bg-cover bg-center">
+    <section className="containerX  font-[600] w-full pt-10 md:pt-20 lg:pt-[140px] pb-20 lg:pb-[20px] relative  xl:px-16 2xl:px-20">
     <div className="flex flex-col lg:flex-row gap-10">
       {/* Left portion */}
       <div className="flex flex-col w-full lg:w-[50%]  text-center lg:text-left">
@@ -71,6 +72,7 @@ const HeroHome = () => {
   </div>
 </div>
 
+  </section>
   </section>
   );
 };
