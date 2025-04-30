@@ -1,6 +1,6 @@
 import { projectsData } from "@/services/data";
 import SliderContainer from "../shared/SlideContainer";
-import ProjectHomeCard from "./ProjectHomeCard";
+import ProjectHomeCard from "../home/ProjectHomeCard";
 
 function OtherProjects() {
   return (

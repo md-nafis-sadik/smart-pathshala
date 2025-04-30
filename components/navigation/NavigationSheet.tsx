@@ -2,6 +2,7 @@ import { FC, Fragment } from "react";
 import { Sheet, SheetContent, SheetHeader } from "@/components/ui/sheet";
 import { GradientButton } from "../ui/gradient-button";
 import { cn } from "@/lib/utils";
+import { Button } from "../ui/button";
 import {
   CallMissedIcon,
   CrossIcon,
@@ -27,12 +28,12 @@ const NavigationSheet: FC<IFNavigationSheetProps> = ({
 
   return (
     <Sheet open={isSheetOpen} onOpenChange={closeSheet}>
-      <SheetContent showCrossIcon={false} className="bg-black select-none">
+      <SheetContent showCrossIcon={false} className=" select-none">
         <SheetHeader className="hidden" />
 
-        <div className="flex_center justify-end py-3 px-6 border-b border-dashed border-[#303030]">
+        <div className="bg-white flex_center justify-end py-3 px-6 border-b border-dashed border-[#303030]">
           <GradientButton
-            className={cn("bg-black flex_center gap-2 group")}
+            className={cn("bg-white flex_center gap-2 group")}
             containerClassName="block w-fit"
             nonGradient
             onClick={closeSheet}
@@ -40,7 +41,7 @@ const NavigationSheet: FC<IFNavigationSheetProps> = ({
             <CrossIcon color={colors.white} className="!h-5 !w-5 !shrink-0" />
             <span
               className={cn(
-                "text-white font-scoutcond text-lg font-bold uppercase !leading-[0.9] group-hover:text-white transition_common"
+                "text-black font-scoutcond text-lg font-bold uppercase !leading-[0.9] group-hover:text-white transition_common"
               )}
             >
               Close
@@ -48,7 +49,7 @@ const NavigationSheet: FC<IFNavigationSheetProps> = ({
           </GradientButton>
         </div>
 
-        <div className="flex flex-col items-center w-full mt-6 mb-10">
+        <div className="flex flex-col items-center w-full mt-6 mb-10 bg-white">
           {navbarData.map(({ link, name, megaMenu }, index) => (
             <Fragment key={index}>
               <Link
@@ -71,7 +72,7 @@ const NavigationSheet: FC<IFNavigationSheetProps> = ({
                     pathname === routes.homepage.link
                       ? "font-bold"
                       : "font-normal",
-                    "text-white text-[28px] !leading-[1.2] relative z-[2] font-scoutcond uppercase"
+                    "text-black text-[28px] !leading-[1.2] relative z-[2] font-scoutcond uppercase"
                   )}
                 >
                   {name}
@@ -88,11 +89,16 @@ const NavigationSheet: FC<IFNavigationSheetProps> = ({
         </div>
 
         {/* CONNECT & SOCIALS */}
-        <div className="flex flex-col items-center gap-6 mt-8 md:mt-[60px]">
-          <GradientButton className="px-5">
-            <span className="text-white text-xs">Schedule a call</span>
-            <CallMissedIcon className="!h-6 !w-6 !shrink-0" />
-          </GradientButton>
+        <div className="flex flex-col items-center gap-6 mt-8 md:mt-[60px] bg-white">
+        <Button className="hidden md:flex bg-yellowish-700 flex_center gap-2 group ps-3 md:px-5 font-semibold text-text-800 text-sm">
+                <span className="!leading-none">School Login</span>
+              </Button>
+
+
+          {/* GET IN TOUCH */}
+          <Button className="hidden md:flex bg-skyish-700 flex_center gap-2 group ps-3 md:px-5 font-semibold text-white text-sm">
+                <span className="!leading-none">Register Now</span>
+              </Button>
 
           <div className="flex flex-row items-center gap-3">
             {socialsData.map(({ link, icon }, index) => (

@@ -113,7 +113,7 @@ export const testimonialsData = [
     id: 1,
     message:
       "I've been working with this team closely for a few years now and they have went above and beyond to bring my vision to life. Very talented and I look forward to continuing to make even more ideas a reality.",
-    avatar: images.avater3,
+    avatar: images.avatar1,
     name: "Benjamin Oakes",
     title: "Founder - TechV",
   },
@@ -121,7 +121,7 @@ export const testimonialsData = [
     id: 2,
     message:
       "The dedication and creativity of this team are unmatched. They exceeded my expectations and delivered exceptional results every time.",
-    avatar: images.avater3,
+    avatar: images.avatar2,
     name: "Sophia Lee",
     title: "CEO - InnovateNow",
   },
@@ -129,7 +129,7 @@ export const testimonialsData = [
     id: 3,
     message:
       "Working with this team has been an incredible experience. Their ability to bring ideas to life is truly remarkable, and I couldn't be happier with the results.",
-    avatar: images.avater3,
+    avatar: images.avatar1,
     name: "Michael Harper",
     title: "CTO - FutureTech Solutions",
   },

@@ -23,13 +23,9 @@ const Testimonial = () => {
   return (
     <div className="containerX w-full py-20 md:py-[120px] relative">
       <div className="w-fit relative mx-auto h-fit">
-      <div>
-    <h2 className="text-center text-3xl md:text-[50px] xl:text-[64px] font-bold text-gray-900">Our Goals</h2>
-          <p className="text-center mt-6 text-gray-600 text-base">
-            Setting the Path for a Smarter, More Connected Future in Education
-          </p>
-          </div>
-
+        <h2 className="text-center text-3xl md:text-[50px] font-bold text-gray-900">
+          Trusted by Schools, Teachers & Administrators Across Bangladesh
+        </h2>
       </div>
 
       {/* CAROUSEL */}
@@ -49,30 +45,19 @@ const Testimonial = () => {
         </div>
       </div>
 
+      {/* Navigation Buttons */}
       <div className="hidden md:flex_center gap-8 mt-10 md:mt-[60px]">
         <button
-          aria-label="move left button"
-          className={cn(
-            "btn bg-white transition-all duration-300 h-10 md:h-[60px] w-10 md:w-[60px] border border-natural-300 hover:bg-main-500 group rounded-full flex_center"
-          )}
           onClick={onPrevButtonClick}
+          className="btn bg-white h-10 md:h-[60px] w-10 md:w-[60px] border border-natural-300 hover:bg-main-500 rounded-full flex_center"
         >
-          <LeftSignIcon
-            className="h-6 w-6 md:h-[32px] md:w-[32px] group-hover:text-white"
-            color={"currentColor"}
-          />
+          <LeftSignIcon className="h-6 w-6 group-hover:text-white" />
         </button>
         <button
-          aria-label="move right button"
-          className={cn(
-            "btn bg-white transition-all duration-300 h-10 md:h-[60px] w-10 md:w-[60px] border border-natural-300 hover:bg-main-500 group rounded-full flex_center "
-          )}
           onClick={onNextButtonClick}
+          className="btn bg-white h-10 md:h-[60px] w-10 md:w-[60px] border border-natural-300 hover:bg-main-500 rounded-full flex_center"
         >
-          <RightSignIcon
-            className="h-6 w-6 md:h-[32px] md:w-[32px] group-hover:text-white"
-            color={"currentColor"}
-          />
+          <RightSignIcon className="h-6 w-6 group-hover:text-white" />
         </button>
       </div>
     </div>

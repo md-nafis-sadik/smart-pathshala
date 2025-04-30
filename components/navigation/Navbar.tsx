@@ -94,22 +94,22 @@ const Navbar: FC = () => {
         </div>
         </div>
 
-        <div className="hidden md:flex flex-row items-center gap-2 md:gap-3">
+        <div className="flex flex-row items-center gap-2 md:gap-3">
           {/* ON/OFF MUSIC */}
      
-              <Button className="bg-yellowish-700 flex_center gap-2 group ps-3 md:px-5 font-semibold text-text-800 text-sm">
+              <Button className="hidden md:flex bg-yellowish-700 flex_center gap-2 group ps-3 md:px-5 font-semibold text-text-800 text-sm">
                 <span className="!leading-none">School Login</span>
               </Button>
 
 
           {/* GET IN TOUCH */}
-          <Button className="bg-skyish-700 flex_center gap-2 group ps-3 md:px-5 font-semibold text-white text-sm">
+          <Button className="hidden md:flex bg-skyish-700 flex_center gap-2 group ps-3 md:px-5 font-semibold text-white text-sm">
                 <span className="!leading-none">Register Now</span>
               </Button>
 
           {/* MOBILE MENU */}
           <GradientButton
-            className={cn("bg-black flex_center gap-2 group ps-[10px] md:px-3")}
+            className={cn("flex_center gap-2 group ps-[10px] md:px-3")}
             containerClassName="block min-[1160px]:hidden"
             onClick={() => setIsSheetOpen(true)}
           >

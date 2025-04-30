@@ -1,6 +1,4 @@
-import AllProducts from "@/components/products/AllProducts";
-import ProductFilterItems from "@/components/products/ProductFilterItems";
-import PageThumbnail from "@/components/shared/PageThumbnail";
+
 
 async function Products({
   searchParams,
@@ -11,9 +9,7 @@ async function Products({
 
   return (
     <>
-      <PageThumbnail title="Our Products" description="showcase" />
-      <ProductFilterItems query={query} />
-      <AllProducts query={query} />
+
     </>
   );
 }

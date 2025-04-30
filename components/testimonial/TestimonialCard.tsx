@@ -1,5 +1,7 @@
 import { inter, scoutCond } from "@/lib/fonts";
 import { cn } from "@/lib/utils";
+import { QuoteIconv2 } from "@/services";
+import { QuoteIcon } from "lucide-react";
 import Image, { StaticImageData } from "next/image";
 
 interface IFTestimonialCard {
@@ -16,16 +18,14 @@ const TestimonialCard = ({
   title,
 }: IFTestimonialCard) => {
   return (
-    <div className="flex_center flex-col mt-10 md:mt-20 min-w-full select-none">
-      <p
-        className={cn(
-          "text-sm md:text-lg uppercase !leading-[1.6] font-normal text-center max-w-[1000px]"
-        )}
-      >
+    <div className="flex rounded-2xl bg-[#F0F8FF] flex-col mt-10 md:mt-20 flex-[0_0_100%] md:flex-[0_0_calc(50%-12px)] select-none p-8">
+      <QuoteIconv2 className="w-5 h-5 md:w-[33px] md:h-[27px] text-primary-500 mb-6" />
+      <div className="text-base md:text-lg font-semibold text-center lg:text-left mb-3 twxt-[#191919]">{title}</div>
+      <div className="text-sm md:text-base !leading-[1.6] text-center lg:text-left max-w-full">
         {message}
-      </p>
+      </div>
 
-      <div className="flex flex-row gap-3 items-center mt-6">
+      <div className="flex gap-3 items-center mt-6 w-full">
         <Image
           src={avatar}
           alt="avatar"
@@ -33,23 +33,11 @@ const TestimonialCard = ({
           width={500}
           height={500}
         />
-
         <div className="flex flex-col">
-          <p
-            className={cn(
-              "text-[28px] md:text-[32px] font-bold !leading-normal text-text-900 tracking-[0.84px] md:tracking-[0.96px] uppercase font-scoutcond"
-            )}
-          >
+          <p className="text-base font-bold uppercase">
             {name}
           </p>
-
-          <p
-            className={cn(
-              "text-sm md:text-base font-normal !leading-normal text-text-600 font-inter"
-            )}
-          >
-            {title}
-          </p>
+          <p className="text-sm text-text-600">{title}</p>
         </div>
       </div>
     </div>

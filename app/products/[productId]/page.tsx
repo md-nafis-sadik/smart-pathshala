@@ -1,6 +1,4 @@
-import OtherProducts from "@/components/products/OtherProducts";
-import ProductDetails from "@/components/products/ProductDetails";
-import Breadcrumbs from "@/components/shared/Breadcrumbs";
+
 
 async function SingleProductDetails({
   params,
@@ -18,13 +16,7 @@ async function SingleProductDetails({
 
   return (
     <>
-      <div className="py-4 sm:py-6 md:py-10">
-        <div className="containerX">
-          <Breadcrumbs breadcrumbs={breadcrumbs} />
-        </div>
-      </div>
-      <ProductDetails imageIndex={Number(image_index || 0)} />
-      <OtherProducts />
+      
     </>
   );
 }
