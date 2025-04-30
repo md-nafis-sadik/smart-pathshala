@@ -88,7 +88,7 @@ export default function Benefits() {
         </div>
 
       {/* Right: Circle + Image */}
-      <div className="w-full  lg:w-1/2 relative flex justify-end items-center">
+      <div className="w-full  lg:w-1/2 relative flex justify-center lg:justify-end items-center">
         {/* Soft Circle Background */}
         {/* Overlapping Image */}
         <Image

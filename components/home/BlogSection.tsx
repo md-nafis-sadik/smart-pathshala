@@ -72,11 +72,11 @@ const BlogSection = () => {
       </div>
 
       <div className="mt-16 overflow-hidden" ref={emblaRef}>
-        <div className="flex gap-8 pr-8 lg:px-16">
+        <div className="flex gap-8 px-0 md:px-8 lg:px-10">
           {blogData.map((blog) => (
             <div
               key={blog.id}
-              className="flex-[0_0_100%] md:flex-[0_0_calc(50%-12px)] lg:flex-[0_0_calc(33.333%-16px)] bg-white rounded-3xl overflow-hidden p-7"
+              className="flex-[0_0_100%] md:flex-[0_0_calc(50%)] lg:flex-[0_0_calc(33.333%)] bg-white rounded-3xl overflow-hidden p-7"
             >
               <Image src={blog.image} alt={blog.title} width={500} height={300} className="w-full h-[224px] object-cover rounded-2xl" />
               <div className="text-left">

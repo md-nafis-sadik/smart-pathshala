@@ -10,6 +10,7 @@ import {
 } from "@/services/assets/svgs";
 import Autoplay from "embla-carousel-autoplay";
 import { testimonialsData } from "@/services/data/shared.data";
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const Testimonial = () => {
   const autoplayOptions = { delay: 3000 };
@@ -53,15 +54,15 @@ const Testimonial = () => {
           onClick={onPrevButtonClick}
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
-          className="btn bg-white h-10 md:h-[60px] w-10 md:w-[60px] border hover:text-white border-natural-50 shadow-lg hover:bg-skyish-700 rounded-full flex_center"
+          className="p-3 lg:p-[18px] bg-white hover:bg-skyish-700 hover:text-white transition-all shadow-lg rounded-full hover:-translate-y-1"
         >
-          <LeftSignIcon className="h-6 w-6 " color= {hovered ? '#FFFFFF' : '#0C0C0C'}  />
+          <ChevronLeft />
         </button>
         <button
           onClick={onNextButtonClick}
-          className="btn bg-white h-10 md:h-[60px] w-10 md:w-[60px] border hover:text-white border-natural-50 shadow-lg hover:bg-skyish-700 rounded-full flex_center"
+          className="p-3 lg:p-[18px] bg-white hover:bg-skyish-700 hover:text-white transition-all shadow-lg rounded-full hover:-translate-y-1"
         >
-          <RightSignIcon className="h-6 w-6 " color= {hovered ? '#FFFFFF' : '#0C0C0C'}  />
+          <ChevronRight />
         </button>
       </div>
     </div>
