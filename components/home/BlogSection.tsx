@@ -66,7 +66,7 @@ const BlogSection = () => {
         <div className="containerX">
       <div className=" text-center">
         <h2 className="text-3xl md:text-[50px] xl:text-[64px] font-bold text-gray-900">Our Blog</h2>
-        <p className="mt-4 text-base text-gray-600">
+        <p className="mt-6 text-base text-gray-600">
           Setting the Path for a Smarter, More Connected Future in Education
         </p>
       </div>

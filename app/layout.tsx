@@ -8,8 +8,9 @@ import Navbar from "@/components/navigation/Navbar";
 import { cn } from "@/lib/utils";
 import "@/styles/app.css";
 import "@/styles/globals.css";
-import { FacebookLineIcon, InstaLineIcon, LinkedInLineIcon, TwitterLineIcon, YoutubeLineIcon } from "@/services";
-import { Link } from "lucide-react";
+import { FacebookLineIcon, images, InstaLineIcon, LinkedInLineIcon, TwitterLineIcon, YoutubeLineIcon } from "@/services";
+import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Smart Pathshala",
@@ -42,13 +43,10 @@ const RootLayout = ({
         <Footer />
         <div className="bg-[#082237]">
       <div className="flex flex-col lg:flex-row items-center justify-between  containerX py-6 ">
-          <div className="text-white pb-5 lg:pb-0">© Copyright 2025 <Link href="/" className="text-skyish-700">Smart Pathshala</Link> | All rights are reserved</div>
-          <div className="flex items-center gap-4">
-            <div><Link href="/"><FacebookLineIcon/></Link></div>
-            <div><Link href="/"><TwitterLineIcon/></Link></div>
-            <div><Link href="/"><InstaLineIcon/></Link></div>
-            <div><Link href="/"><LinkedInLineIcon/></Link></div>
-            <div><Link href="/"><YoutubeLineIcon/></Link></div>
+          <div className="text-white pb-5 lg:pb-0 text-xs lg:text-base">© Copyright 2025 <Link href="/" className="text-skyish-700">Smart Pathshala</Link> | All rights are reserved</div>
+          <div className="flex items-center gap-2">
+            <div><Image src={images.NetroIcon} alt=""/></div>
+            <div className="text-white font-bold">Develeped by Netro</div>
           </div>
         </div>
         </div>

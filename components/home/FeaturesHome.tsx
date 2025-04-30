@@ -8,17 +8,17 @@ import TextFadeIn from '../animations/TextFadeIn'
 const features = [
   {
     title: 'Student & Teacher Management',
-    description: 'Mobipath covers all stages of a students education, from school admission to receiving their final certificate from school.',
+    description: 'Smart PathShala provides end-to-end support throughout a student’s academic journey — from the moment of admission to the issuance of their final certificate — ensuring a seamless and well-managed educational experience.',
     icon: <FeatureIcon1/>
   },
   {
     title: 'Attendance Tracking',
-    description: 'Skilled programmers working in the European and American software industries have worked to create this software that is suitable for use on mobile phones and desktop computers.',
+    description: 'This software has been developed by skilled programmers with experience in the European and American software industries, ensuring it is optimized for both mobile devices and desktop computers.',
     icon: <FeatureIcon2/>
   },
   {
     title: 'Reports & Analytics',
-    description: 'Minimal internet data usage. real-time insights on institution performance.',
+    description: 'Designed to be highly efficient, this software ensures minimal internet data usage, providing a seamless experience even with limited connectivity.',
     icon: <FeatureIcon3/>
   },
 ]

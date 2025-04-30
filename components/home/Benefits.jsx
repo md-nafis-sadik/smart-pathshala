@@ -5,18 +5,46 @@ import { CheckCircle } from 'lucide-react'
 import { BenefitIcon, images } from '@/services'
 import TextFadeIn from '../animations/TextFadeIn'
 
-const features = [
+const educationFeatures = [
   {
-    title: 'Student & Teacher Management',
-    description: 'Mobipath covers all stages of a students education, from school admission to receiving their final certificate from school.',
+    title: 'Streamlined Administration',
+    description: 'Automates tasks like admissions, attendance, fee management, and reporting—saving time and reducing errors.',
   },
   {
-    title: 'Attendance Tracking',
-    description: 'Skilled programmers working in the European and American software industries have worked to create this software that is suitable for use on mobile phones and desktop computers.',
+    title: 'Centralized Data & Easy Access',
+    description: 'Stores student, staff, and academic data in one secure place, making it accessible anytime from anywhere.',
   },
   {
-    title: 'Reports & Analytics',
-    description: 'Minimal internet data usage. real-time insights on institution performance.',
+    title: 'Improved Academic Performance',
+    description: 'Enables better communication, resource sharing, and progress tracking, leading to more effective teaching and learning.',
+  },
+]
+const teacherFeatures = [
+  {
+    title: 'Efficient Class Management',
+    description: 'Apps help teachers schedule classes, take attendance, track assignments, and manage grades with ease, saving time and reducing manual work.',
+  },
+  {
+    title: 'Better Communication with Students & Parents',
+    description: 'Software enables real-time updates, sharing of study materials, and smooth communication with students and parents outside classroom hours.',
+  },
+  {
+    title: 'Personalized Learning & Progress Tracking',
+    description: 'Teachers can monitor individual student progress, identify learning gaps, and provide tailored support using data-driven insights.',
+  },
+]
+const parentsFeatures = [
+  {
+    title: 'Real-Time Updates & Communication',
+    description: 'Parents receive instant notifications about attendance, homework, grades, and school events, keeping them closely involved in their child’s education.',
+  },
+  {
+    title: 'Transparency & Progress Tracking',
+    description: 'Apps allow parents to monitor academic performance, behavior, and teacher feedback, helping them support their childs learning more effectively.',
+  },
+  {
+    title: 'Convenient Access to Information',
+    description: 'From fee payments to exam schedules, all important information is easily accessible in one place, saving time and reducing confusion.',
   },
 ]
 
@@ -53,7 +81,7 @@ export default function Benefits() {
             >Benefits of Educational Institutions</div>
               
               <ul className="space-y-6">
-                {features.map((item, idx) => (
+                {educationFeatures.map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <BenefitIcon className=" shrink-0" />
                     <div>
@@ -75,7 +103,7 @@ export default function Benefits() {
             >Benefits of Teachers</div>
               
               <ul className="space-y-6">
-                {features.map((item, idx) => (
+                {teacherFeatures.map((item, idx) => (
                   <li key={idx} className="flex justify-center lg:items-start gap-3">
                     <BenefitIcon className=" shrink-0" />
                     <div>
@@ -124,7 +152,7 @@ export default function Benefits() {
             >Benefits of Parents</div>
               
               <ul className="space-y-6">
-                {features.map((item, idx) => (
+                {parentsFeatures.map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <BenefitIcon className=" shrink-0" />
                     <div>

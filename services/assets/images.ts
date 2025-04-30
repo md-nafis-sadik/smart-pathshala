@@ -3,6 +3,7 @@
 export { default as heroPathshala } from "@/public/images/smart-pathshala-app.png";
 export { default as BkashLogo } from "@/public/images/sponsors/bkash-logo.png";
 export { default as NetroLogo } from "@/public/images/sponsors/Netro-logo.png";
+export { default as NetroIcon } from "@/public/images/sponsors/Netro-icon.png";
 export { default as NagadLogo } from "@/public/images/sponsors/nagad-logo.png";
 export { default as RocketLogo } from "@/public/images/sponsors/rocket-logo.png";
 export { default as Sponsor1 } from "@/public/images/sponsors/institute-1.png";
