@@ -93,7 +93,7 @@ const BlogSection = () => {
       </div>
 
       {/* Arrows */}
-      <div className="flex_center gap-6 mt-10">
+      <div className="hidden lg:flex_center gap-6 mt-10">
         <button
           onClick={onPrevButtonClick}
           onMouseEnter={() => setHovered(true)}

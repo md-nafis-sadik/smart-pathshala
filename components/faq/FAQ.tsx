@@ -101,7 +101,7 @@ const FAQ = () => {
         </Accordion>
       </div>
 
-<div className="flex gap-6 mt-10">
+<div className="hidden lg:flex gap-6 mt-10">
       <div className="">
           <button onClick={() => scrollTabs("left")} className="p-3 lg:p-[18px] bg-white hover:bg-skyish-700 hover:text-white transition-all shadow-lg rounded-full hover:-translate-y-1">
             <ChevronLeft />
