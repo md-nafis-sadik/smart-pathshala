@@ -35,7 +35,7 @@ export default function Benefits() {
       {/* Left: Text */}
 
       {/* Right: Circle + Image */}
-      <div className="w-full  lg:w-1/2 relative flex justify-start items-center">
+      <div className="w-full  lg:w-1/2 relative flex justify-center lg:justify-start items-center">
         {/* Soft Circle Background */}
         {/* Overlapping Image */}
         <Image
@@ -76,7 +76,7 @@ export default function Benefits() {
               
               <ul className="space-y-6">
                 {features.map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-3">
+                  <li key={idx} className="flex justify-center lg:items-start gap-3">
                     <BenefitIcon className=" shrink-0" />
                     <div>
                         <p className="text-lg font-semibold text-text-850">{item.title}</p>
@@ -106,7 +106,7 @@ export default function Benefits() {
       {/* Left: Text */}
 
       {/* Right: Circle + Image */}
-      <div className="w-full  lg:w-1/2 relative flex justify-start items-center">
+      <div className="w-full  lg:w-1/2 relative flex justify-center lg:justify-start items-center">
         {/* Soft Circle Background */}
         {/* Overlapping Image */}
         <Image
