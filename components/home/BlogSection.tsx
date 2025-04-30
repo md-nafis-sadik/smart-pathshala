@@ -72,7 +72,7 @@ const BlogSection = () => {
       </div>
 
       <div className="mt-16 overflow-hidden" ref={emblaRef}>
-        <div className="flex gap-8 pr-8 lg:pr-16">
+        <div className="flex gap-8 pr-8 lg:px-16">
           {blogData.map((blog) => (
             <div
               key={blog.id}
