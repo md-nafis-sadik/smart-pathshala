@@ -127,40 +127,6 @@ export const coreStrengthsServicesData = [
   },
 ];
 
-export const clientServicesListData = [
-  {
-    image: images.companyBlack1,
-    title: "Company 1",
-  },
-  {
-    image: images.companyBlack2,
-    title: "Company 2",
-  },
-  {
-    image: images.companyBlack3,
-    title: "Company 3",
-  },
-  {
-    image: images.companyBlack4,
-    title: "Company 4",
-  },
-  {
-    image: images.companyBlack5,
-    title: "Company 5",
-  },
-  {
-    image: images.companyBlack6,
-    title: "Company 6",
-  },
-  {
-    image: images.companyBlack3,
-    title: "Company 3",
-  },
-  {
-    image: images.companyBlack4,
-    title: "Company 4",
-  },
-];
 
 export const customSoftwareDevelopmentServiceData = [
   {

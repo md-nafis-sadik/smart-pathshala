@@ -1,6 +1,4 @@
 
-import { cn } from "@/lib/utils";
-import { projectsData } from "@/services/data";
 
 async function PortfolioPage({
   searchParams,
