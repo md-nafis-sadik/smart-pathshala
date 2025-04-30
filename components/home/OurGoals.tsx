@@ -2,6 +2,7 @@
 
 import { ConnectionIcon } from "@/services";
 import { ComputerIcon } from "lucide-react";
+import TextFadeIn from "../animations/TextFadeIn";
 
 export default function OurGoals() {
     const goals = [
@@ -26,12 +27,14 @@ export default function OurGoals() {
     return (
       <section className="py-10 md:py-20 xl:py-28 bg-skyish-200">
         <div className="containerX mx-auto text-center">
-          <h2 className=" text-3xl md:text-[50px] xl:text-[64px] font-bold text-gray-900">Our Goals</h2>
-          <p className="mt-7 text-gray-600 text-base">
-            Setting the Path for a Smarter, More Connected Future in Education
-          </p>
+        <TextFadeIn text="Our Goals" className="w-full lg:max-w-[522px] text-2xl md:text-4xl lg:text-[48px] font-[700] !leading-[1.2] text-text-850 tracking-wide mb-6"
+        />
+        <p className="text-[#4f4f4f] text-xs md:text-sm lg:text-lg mb-7 lg:mb-10 font-medium leading-relaxed
+        transition-opacity duration-1000 ease-out text-center lg:text-left">
+          Setting the Path for a Smarter, More Connected Future in Education
+        </p>
   
-          <div className="mt-16 grid gap-8 sm:grid-cols-1 md:grid-cols-2">
+          <div className="mt-10 lg:mt-16 grid gap-8 grid-cols-1 sm:grid-cols-2">
             {goals.map((goal, index) => (
               <div
                 key={index}
@@ -44,10 +47,10 @@ export default function OurGoals() {
                   {goal.icon}
                 </div>
                 </div>
-                <h3 className="text-[24px] font-bold text-gray-900 text-center lg:text-left">
+                <h3 className="text-base md:text-lg lg:text-[24px] font-bold text-gray-900 text-center lg:text-left">
                   {goal.title}
                 </h3>
-                <p className="mt-3 text-[#888] text-base text-center lg:text-left">{goal.description}</p>
+                <p className="text-xs md:text-sm mt-3 text-[#888] lg:text-base text-center lg:text-left">{goal.description}</p>
                 <div className="mt-6 mb-2 w-full flex justify-center lg:justify-start">
                   <a
                     href="#"

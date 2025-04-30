@@ -100,7 +100,7 @@ const TextFadeIn: React.FC<TextFadeInProps> = ({ text, className = "" }) => {
       className={cn(`flex flex-col font-inter`, className)}
     >
       {words.map((line: string, lineIndex: React.Key | null | undefined) => (
-        <div key={lineIndex} className="flex flex-wrap">
+        <div key={lineIndex} className="flex flex-wrap justify-center lg:justify-start">
           {line
             .split(" ")
             .map((word: string, wordIndex: React.Key | null | undefined) => (

@@ -1,3 +1,4 @@
+'use client'
 import { cn } from "@/lib/utils";
 import { images } from "@/services";
 import { ArrowLongTailIcon, CallMissedIcon } from "@/services/assets/svgs";
@@ -11,44 +12,55 @@ import SectionSubHeader from "../common/SectionSubHeader";
 import TextFadeIn from "../animations/TextFadeIn";
 import ArrowLineupButton from "../ui/arrow-lineup-button";
 import colors from "@/lib/colors";
+import { Import } from "lucide-react";
+import AnimatedTitle from "../ui/AnimatedTitle";
+import { useEffect, useRef, useState } from "react";
+import AnimatedText from "../ui/AnimatedTitle";
 
 const HeroHome = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    // Trigger the animation after mount
+    setIsVisible(true);
+  }, []);
+  
   return (
     <section className="bg-[url('/images/patterns/hero-bg.png')]  bg-cover bg-center">
-    <section className="containerX font-[600] w-full pt-10 md:pt-20 lg:pt-[0px] pb-[0px] relative  xl:px-16 2xl:px-20">
-    <div className="flex flex-col lg:flex-row gap-10">
+    <section className="containerX font-[600] w-full pt-10 md:pt-20 lg:pt-[0px] pb-[0px] relative px-0 lg:px-16 2xl:px-20">
+    <div className="flex flex-col lg:flex-row gap-10 px-4 sm:px-8">
       {/* Left portion */}
-      <div className="flex flex-col w-full lg:w-[50%] p text-center lg:text-left py-[0px] lg:py-[100px] ">
-
-      <div className="text-4xl md:text-[50px] lg:text-[65px] xl:text-[80px] !leading-[1] mt-6 md:mt-10 text-text-800 font-semibold"
-        >The Future of</div>
-        <div className="text-4xl md:text-[50px] lg:text-[65px] xl:text-[80px] font-extrabold !leading-[1] mt-3 md:mt-2 text-text-800"
-        >Education Management</div>
-
-        <p className="mt-5 text-sm md:text-lg font-light text-gray-700">A Powerful School & College Management System Designed to Streamline Administration, Enhance Learning, and Connect Everyone Seamlessly</p>
+      <div className="flex flex-col w-full lg:w-[50%]  py-[0px] lg:py-[100px] ">
+      
+      <TextFadeIn text="The Future of" className="justify-center text-4xl md:text-[50px] lg:text-[65px] xl:text-[80px] !leading-[1.2] mt-6 md:mt-10 text-text-800 font-medium"
+        />
+        <TextFadeIn text="Education Management" className="text-center lg:text-left text-5xl md:text-[50px] lg:text-[65px] xl:text-[80px] font-extrabold !leading-[1.2] mt-3 md:mt-2 text-text-800"
+        />
+      <AnimatedText text="A Powerful School & College Management System Designed to Streamline Administration, Enhance Learning, and Connect Everyone Seamlessly" className="mt-5 text-center lg:text-left text-xs md:text-sm" />
+        
 
         <div className="mt-5 lg:mt-10 flex items-center justify-center lg:justify-start gap-2 md:gap-4">
-          <Button className="w-fit group bg-skyish-700 hover:bg-sky-600 py-2.5">
+          
+          
+          <GradientButton className="w-fit group bg-skyish-700 hover:bg-sky-600 py-2.5">
             <span className="!leading-none py-1 text-sm lg:text-base">Get Started</span>
-          </Button>
+          </GradientButton>
         </div>
       </div>
 
       {/* Right portion */}
-      <div className="w-full lg:w-[50%] flex flex-col justify-end lg:justify-end relative overflow-hidden">
+      <div className="w-full lg:w-[50%] flex flex-col justify-end relative overflow-hidden">
       <Image
-  alt="hero star glass image"
-  src={images.heroPathshala}
-  className="w-full h-auto object-contain"
-  width={0}
-  height={0}
-  sizes="100vw"
-/>
-
-      <div>
-
-      </div>
-      </div>
+        alt="hero star glass image"
+        src={images.heroPathshala}
+        className={`w-auto lg:w-full h-[300px] lg:h-auto object-contain transition-all duration-700 ease-out transform ${
+          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+        }`}
+        width={0}
+        height={0}
+        sizes="100vw"
+      />
+    </div>
     </div>
     {/* <div className="flex flex-col lg:flex-row justify-between items-center py-4 rounded-lg mt-12">
  
