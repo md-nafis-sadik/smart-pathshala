@@ -31,22 +31,11 @@ const NavigationSheet: FC<IFNavigationSheetProps> = ({
       <SheetContent showCrossIcon={false} className=" select-none">
         <SheetHeader className="hidden" />
 
-        <div className="bg-white flex_center justify-end py-3 px-6 border-b border-dashed border-[#303030]">
-          <GradientButton
-            className={cn("bg-white flex_center gap-2 group")}
-            containerClassName="block w-fit"
-            nonGradient
-            onClick={closeSheet}
-          >
-            <CrossIcon color={colors.white} className="!h-5 !w-5 !shrink-0" />
-            <span
-              className={cn(
-                "text-black font-scoutcond text-lg font-bold uppercase !leading-[0.9] group-hover:text-white transition_common"
-              )}
-            >
-              Close
-            </span>
-          </GradientButton>
+        <div className="bg-white flex_center justify-end py-3 px-6 border-b ">
+          
+            <div className="lg:hidden flex cursor-pointer" onClick={closeSheet}><CrossIcon color="black" className="!h-5 !w-5 !shrink-0" /></div>
+            
+          
         </div>
 
         <div className="flex flex-col items-center w-full mt-6 mb-10 bg-white">
@@ -54,7 +43,8 @@ const NavigationSheet: FC<IFNavigationSheetProps> = ({
             <Fragment key={index}>
               <Link
                 href={link}
-                className="h-[34px] py-3 px-2 outline-none group flex items-center justify-center gap-1 relative min-h-[58px] w-[70%] border-b border-dashed border-[#2c2c2c] transition_common"
+                className="h-[34px] py-3 px-2 outline-none group flex items-center justify-center gap-1 relative min-h-[58px] w-[70%] border-b 
+                 border-gray-200 transition_common"
                 onClick={closeSheet}
               >
                 <span
@@ -70,9 +60,9 @@ const NavigationSheet: FC<IFNavigationSheetProps> = ({
                 <span
                   className={cn(
                     pathname === routes.homepage.link
-                      ? "font-bold"
+                      ? "font-semibold"
                       : "font-normal",
-                    "text-black text-[28px] !leading-[1.2] relative z-[2] font-scoutcond uppercase"
+                    "text-black text-[28px] !leading-[1.2] relative z-[2] text-lg"
                   )}
                 >
                   {name}
@@ -90,14 +80,14 @@ const NavigationSheet: FC<IFNavigationSheetProps> = ({
 
         {/* CONNECT & SOCIALS */}
         <div className="flex flex-col items-center gap-6 mt-8 md:mt-[60px] bg-white">
-        <Button className="hidden md:flex bg-yellowish-700 flex_center gap-2 group ps-3 md:px-5 font-semibold text-text-800 text-sm">
-                <span className="!leading-none">School Login</span>
+        <Button className="flex bg-yellowish-700 hover:bg-amber-500 flex_center gap-2 group ps-3 md:px-5 font-semibold text-text-800 text-sm px-6 py-3">
+                <span className="!leading-none px-4">School Login</span>
               </Button>
 
 
           {/* GET IN TOUCH */}
-          <Button className="hidden md:flex bg-skyish-700 flex_center gap-2 group ps-3 md:px-5 font-semibold text-white text-sm">
-                <span className="!leading-none">Register Now</span>
+          <Button className="flex bg-skyish-700 hover:bg-sky-600 flex_center gap-2 group ps-3 md:px-5 font-semibold text-white text-sm px-6 py-3">
+                <span className="!leading-none px-4">Register Now</span>
               </Button>
 
           <div className="flex flex-row items-center gap-3">

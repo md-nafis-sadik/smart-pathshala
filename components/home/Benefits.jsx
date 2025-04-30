@@ -26,8 +26,8 @@ export default function Benefits() {
     
     <div className='containerX py-16 md:py-[120px] space-y-16'>
     <div>
-    <h2 className="text-center text-3xl md:text-[50px] xl:text-[64px] font-bold text-gray-900">Our Goals</h2>
-          <p className="text-center mt-6 text-gray-600 text-base">
+    <h2 className="text-center text-3xl md:text-[50px] xl:text-[64px] font-bold text-gray-900">Benefits</h2>
+          <p className="text-center mt-7 text-gray-600 text-base">
             Setting the Path for a Smarter, More Connected Future in Education
           </p>
           </div>
@@ -72,7 +72,7 @@ export default function Benefits() {
       {/* Left: Text */}
        <div className="w-full lg:w-1/2">
         <div className="w-full max-w-full lg:max-w-[522px] text-xl md:text-[24px] xl:text-[28px] font-bold !leading-[1.2] text-text-850 tracking-wide mb-10"
-            >Benefits of Educational Institutions</div>
+            >Benefits of Teachers</div>
               
               <ul className="space-y-6">
                 {features.map((item, idx) => (
@@ -121,7 +121,7 @@ export default function Benefits() {
 
        <div className="w-full lg:w-1/2">
         <div className="w-full max-w-full lg:max-w-[522px] text-xl md:text-[24px] xl:text-[28px] font-bold !leading-[1.2] text-text-850 tracking-wide mb-10"
-            >Benefits of Educational Institutions</div>
+            >Benefits of Parents</div>
               
               <ul className="space-y-6">
                 {features.map((item, idx) => (

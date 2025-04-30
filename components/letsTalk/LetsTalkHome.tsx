@@ -18,11 +18,10 @@ const LetsTalkHome = () => {
         <div>
           <div>
             <h2 className="text-center text-2xl md:text-[30px] xl:text-[48px] font-bold text-white">
-              Our Goals
+            Stay Updated with Smart Pathshala
             </h2>
             <p className="text-center mt-6 text-white text-base">
-              Setting the Path for a Smarter, More Connected Future in Education
-            </p>
+            Subscribe today and never miss an update on smarter institute management            </p>
           </div>
         </div>
 
@@ -30,7 +29,7 @@ const LetsTalkHome = () => {
           <form className="rounded-full border border-[#494949] ps-6 py-1 pe-1 md:pe-3 h-[54px] md:h-[70px] flex items-center justify-between gap-4 bg-white w-full max-w-[540px]">
             <input
               type="email"
-              placeholder="Ex: user@website.com"
+              placeholder="Enter your email address"
               className={cn(
                 "text-sm md:text-base font-normal !leading-[1.3] bg-transparent border-none outline-none text-white placeholder:bg-clip-text placeholder:text-gray-400 h-full font-inter max-w-[148px] md:max-w-full"
               )}

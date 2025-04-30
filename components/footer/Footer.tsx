@@ -1,5 +1,8 @@
-import { inter, scoutCond } from "@/lib/fonts";
+"use client";
+
 import { cn } from "@/lib/utils";
+import { images } from "@/services";
+import Image from "next/image";
 import {
   AtTheRateIcon,
   CallIcon,
@@ -14,31 +17,28 @@ const Footer = () => {
       <div className="containerX">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 min-[1120px]:grid-cols-4 gap-10 md:gap-6">
           {/* Inquiries */}
-          <div className=" text-white col-span-1 md:col-span-2 flex items-center sm:items-start flex-col">
-            <p
-              className={cn(
-                "footer_el_title text-center sm:text-start font-scoutcond"
-              )}
-            >
-              {footerData.inquiries.title}
-            </p>
+          <div className=" text-white col-span-1 md:col-span-2 flex items-center sm:items-start flex-col max-w-[363px]">
+          <Link href='/' className="h-fit">
+        <div className="flex items-center gap-2">
+          <Image alt="logo" src={images.LogoWhite} className="w-[51px]"/>
+          <span className="font-bold text-lg leading-tight">SMART PATHSHALA</span>
+          </div>
+        </Link>
             <p
               className={cn(
                 "footer_el_text mt-4 md:mt-8 text-center sm:text-start font-inter"
               )}
             >
-              {footerData.inquiries.address}
+              {footerData.inquiries.description}
             </p>
-            <div className="flex items-center gap-6 mt-4 md:mt-6">
-              <div className="h-8 w-8 rounded-full bg-white flex_center">
-                <CallIcon className="h-[14px] w-[14px] !shrink-0" />
-              </div>
+            <div className="flex items-center gap-3 mt-4 md:mt-6">
+              
+                <div>Call:</div>
+              
               <p className="footer_el_text">{footerData.inquiries.phone}</p>
             </div>
-            <div className="flex items-center gap-6 mt-4 md:mt-2">
-              <div className="h-8 w-8 rounded-full bg-natural-100 flex_center">
-                <AtTheRateIcon className="h-[14px] w-[14px] !shrink-0" />
-              </div>
+            <div className="flex items-center gap-3 mt-4 md:mt-2">
+            <div>Email:</div>
               <p className="footer_el_text">{footerData.inquiries.email}</p>
             </div>
           </div>
@@ -47,12 +47,12 @@ const Footer = () => {
           <div className=" text-white col-span-2 md:col-span-1 flex items-center sm:items-start flex-col">
             <p
               className={cn(
-                "footer_el_title text-center sm:text-start font-scoutcond"
+                "text-center sm:text-start font-semibold text-xl"
               )}
             >
               {footerData.companyInfo.title}
             </p>
-            <ul className="mt-4 md:mt-10">
+            <ul className="mt-4 md:mt-6">
               {footerData.companyInfo.links.map((link, index) => (
                 <li key={index}>
                   <Link
@@ -72,13 +72,13 @@ const Footer = () => {
           <div className=" text-white col-span-2 md:col-span-1 flex items-center sm:items-start flex-col">
             <p
               className={cn(
-                "footer_el_title text-center sm:text-start font-scoutcond"
+                " text-center sm:text-start font-semibold text-xl"
               )}
             >
-              {footerData.services.title}
+              {footerData.support.title}
             </p>
-            <ul className="mt-4 md:mt-10">
-              {footerData.services.links.map((link, index) => (
+            <ul className="mt-4 md:mt-6">
+              {footerData.support.links.map((link, index) => (
                 <li key={index}>
                   <Link
                     href={link.href}

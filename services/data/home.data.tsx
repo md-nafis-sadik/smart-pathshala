@@ -12,290 +12,9 @@ import {
   YoutubeIcon,
 } from "@/services/assets/svgs";
 
-export const marqueeHomeData = [
-  {
-    image: images.companyWhite1,
-    darkImage: images.companyBlack1,
-  },
-  {
-    image: images.companyWhite2,
-    darkImage: images.companyBlack2,
-  },
-  {
-    image: images.companyWhite3,
-    darkImage: images.companyBlack3,
-  },
-  {
-    image: images.companyWhite4,
-    darkImage: images.companyBlack4,
-  },
-  {
-    image: images.companyWhite5,
-    darkImage: images.companyBlack5,
-  },
-  {
-    image: images.companyWhite6,
-    darkImage: images.companyBlack6,
-  },
-];
 
-export const projectsData = [
-  {
-    name: "Telzen",
-    description:
-      "Empowering brands with user-focused designs and seamless development.",
-    tagList: "Case Study, Mobile App, Telco, Design, Development",
-    image: images.projectBannerTelzen,
-    icon: images.telzenIcon,
-  },
-  {
-    name: "Yoowifi",
-    description:
-      "Empowering brands with user-focused designs and seamless development.",
-    tagList: "Case Study, Mobile App, Telco, Design, Development",
-    image: images.projectBannerYooWifi,
-    icon: images.yoowifiIcon,
-  },
-  {
-    name: "Yoowifi",
-    description:
-      "Empowering brands with user-focused designs and seamless development.",
-    tagList: "Case Study, Mobile App, Telco, Design, Development",
-    image: images.blog1,
-    icon: images.yoowifiIcon,
-  },
-  {
-    name: "Yoowifi",
-    description:
-      "Empowering brands with user-focused designs and seamless development.",
-    tagList: "Case Study, Mobile App, Telco, Design, Development",
-    image: images.blog2,
-    icon: images.yoowifiIcon,
-  },
-  {
-    name: "Yoowifi",
-    description:
-      "Empowering brands with user-focused designs and seamless development.",
-    tagList: "Case Study, Mobile App, Telco, Design, Development",
-    image: images.blog3,
-    icon: images.yoowifiIcon,
-  },
-];
 
-export const servicesHomeData = [
-  {
-    title: "Software Development",
-    text: "Building robust solutions to power your business growth.",
-    link: "",
-    imageComponent: {
-      src: images.doubleLCrystal,
-      alt: "Double L Crystal",
-      className: "!max-w-[142px] md:!max-w-[194px] h-auto",
-    },
-  },
-  {
-    title: "UXUI \nDesign",
-    text: "Designing seamless and intuitive digital experiences.",
-    link: "",
-    imageComponent: {
-      src: images.gemCrystal,
-      alt: "Gem crystal image",
-      className: "!max-w-[96px] md:!max-w-[135px] h-auto",
-    },
-  },
-  {
-    title: "AI Apps Custom LLMs",
-    text: "Building intelligent applications that revolutionize user experiences.",
-    link: "",
-    imageComponent: {
-      src: images.starMixerCrystal,
-      alt: "",
-      className: "!max-w-[133px] md:!max-w-[156px] h-auto",
-    },
-  },
-  {
-    title: "Branding Solution",
-    text: "Building identities that leave a lasting impression.",
-    link: "",
-    imageComponent: {
-      src: images.starCrystal,
-      alt: "",
-      className: "!max-w-[136px] md:!max-w-[184px] h-auto",
-    },
-  },
-  {
-    title: "Server Maintenance",
-    text: "24/7 server care to prevent downtime and ensure efficiency.",
-    link: "",
-    imageComponent: {
-      src: images.honeycombCrystal,
-      alt: "",
-      className: "!max-w-[116px] md:!max-w-[180px] h-auto",
-    },
-  },
-];
 
-export const productsData = [
-  {
-    name: "Yoowifi",
-    description:
-      "A cutting-edge telecom project delivering seamless connectivity solutions.",
-  },
-  {
-    name: "Indemnif.ai",
-    description:
-      "A cutting-edge telecom project delivering seamless connectivity solutions.",
-  },
-  {
-    name: "Artistry",
-    description:
-      "A cutting-edge telecom project delivering seamless connectivity solutions.",
-  },
-  {
-    name: "kanga",
-    description:
-      "A cutting-edge telecom project delivering seamless connectivity solutions.",
-  },
-];
-
-export const teamData = [
-  {
-    name: "asiq mohammed",
-    position: "Managing Director & CEO",
-    image: images.team1,
-    socials: [
-      {
-        type: "linkedin",
-        link: "",
-        icon: (
-          <LinkedinOutlinedIcon
-            color={colors.black}
-            className="!h-[14px] !w-[14px] !shrink-0"
-          />
-        ),
-      },
-    ],
-  },
-  {
-    name: "altamira tripty",
-    position: "Chief Marketing Officer (CMO)",
-    image: images.team2,
-    socials: [
-      {
-        type: "linkedin",
-        link: "",
-        icon: (
-          <LinkedinOutlinedIcon
-            color={colors.black}
-            className="!h-[14px] !w-[14px] !shrink-0"
-          />
-        ),
-      },
-    ],
-  },
-  {
-    name: "sultan mahmud",
-    position: "Chief Operations Officer (COO)",
-    image: images.team3,
-    socials: [
-      {
-        type: "linkedin",
-        link: "",
-        icon: (
-          <LinkedinOutlinedIcon
-            color={colors.black}
-            className="!h-[14px] !w-[14px] !shrink-0"
-          />
-        ),
-      },
-    ],
-  },
-  {
-    name: "ahmed lincon",
-    position: "Chief Technology Officer (CTO)",
-    image: images.team4,
-    socials: [
-      {
-        type: "linkedin",
-        link: "",
-        icon: (
-          <LinkedinOutlinedIcon
-            color={colors.black}
-            className="!h-[14px] !w-[14px] !shrink-0"
-          />
-        ),
-      },
-    ],
-  },
-  {
-    name: "asiq mohammed",
-    position: "Managing Director & CEO",
-    image: images.team1,
-    socials: [
-      {
-        type: "linkedin",
-        link: "",
-        icon: (
-          <LinkedinOutlinedIcon
-            color={colors.black}
-            className="!h-[14px] !w-[14px] !shrink-0"
-          />
-        ),
-      },
-    ],
-  },
-  {
-    name: "altamira tripty",
-    position: "Chief Marketing Officer (CMO)",
-    image: images.team2,
-    socials: [
-      {
-        type: "linkedin",
-        link: "",
-        icon: (
-          <LinkedinOutlinedIcon
-            color={colors.black}
-            className="!h-[14px] !w-[14px] !shrink-0"
-          />
-        ),
-      },
-    ],
-  },
-  {
-    name: "sultan mahmud",
-    position: "Chief Operations Officer (COO)",
-    image: images.team3,
-    socials: [
-      {
-        type: "linkedin",
-        link: "",
-        icon: (
-          <LinkedinOutlinedIcon
-            color={colors.black}
-            className="!h-[14px] !w-[14px] !shrink-0"
-          />
-        ),
-      },
-    ],
-  },
-  {
-    name: "ahmed lincon",
-    position: "Chief Technology Officer (CTO)",
-    image: images.team4,
-    socials: [
-      {
-        type: "linkedin",
-        link: "",
-        icon: (
-          <LinkedinOutlinedIcon
-            color={colors.black}
-            className="!h-[14px] !w-[14px] !shrink-0"
-          />
-        ),
-      },
-    ],
-  },
-];
 
 export const faqData = [
   {
@@ -341,26 +60,7 @@ export const faqData = [
   },
 ];
 
-export const journalData = [
-  {
-    title: "Vision for creative excellence vision",
-    image: images.blog1,
-    date: "30 November, 2024",
-    link: "",
-  },
-  {
-    title: "Vision for creative excellence vision",
-    image: images.blog2,
-    date: "30 November, 2024",
-    link: "",
-  },
-  {
-    title: "Vision for creative excellence vision",
-    image: images.blog3,
-    date: "30 November, 2024",
-    link: "",
-  },
-];
+
 
 export const pricingData = [
   {
@@ -413,22 +113,23 @@ export const footerData = {
     title: "INQUIRIES",
     address:
       "290/737 York House Green Lane West, Garstang, Preston, Lancashire, England, PR3 1NJ",
-    phone: "+1 789 567 890",
-    email: "hello@netrosystems.com",
+    phone: "+880-990-0000",
+    email: "hello@smartpathashala.com",
+    description: "A Powerful School & College Management System Designed to Streamline Administration, Enhance Learning, and Connect Everyone Seamlessly."
   },
   companyInfo: {
-    title: "COMPANY INFO",
+    title: "Important Links",
     links: [
-      { text: "About Us", href: "/about-us" },
-      { text: "Join Our Team", href: "/careers" },
-      { text: "Our Process", href: "/process" },
-      { text: "Client Reviews", href: "/reviews" },
-      { text: "Portfolio", href: "/portfolio" },
-      { text: "Case Studies", href: "/case-studies" },
+      { text: "Registration", href: "/about-us" },
+      { text: "Goals", href: "/careers" },
+      { text: "Features", href: "/process" },
+      { text: "Benefits", href: "/reviews" },
+      { text: "Pricing", href: "/portfolio" },
+      { text: "Blogs", href: "/case-studies" },
     ],
   },
   services: {
-    title: "SERVICES",
+    title: "Other Links",
     links: [
       { text: "UI/UX Design", href: "/services/ui-ux-design" },
       { text: "Branding & Identity", href: "/services/branding" },
@@ -440,11 +141,12 @@ export const footerData = {
     ],
   },
   support: {
-    title: "SUPPORT",
+    title: "Other Links",
     links: [
+      { text: "Contact Us", href: "/help" },
       { text: "Privacy Policy", href: "/privacy-policy" },
       { text: "Terms of Service", href: "/terms-of-service" },
-      { text: "Help Center", href: "/help" },
+      
     ],
   },
   resources: {

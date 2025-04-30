@@ -14,9 +14,9 @@ const FAQ = () => {
     <section className="bg-white flex_center flex-col w-full py-20">
       
       <div>
-    <h2 className="text-center text-3xl md:text-[50px] xl:text-[64px] font-bold text-gray-900">Our Goals</h2>
+    <h2 className="text-center text-3xl md:text-[50px] xl:text-[64px] font-bold text-gray-900">FAQ</h2>
           <p className="text-center mt-6 text-gray-600 text-base">
-            Setting the Path for a Smarter, More Connected Future in Education
+          Find answers to common questions about Smart Pathshala.
           </p>
           </div>
       <div className="containerX mt-10 md:mt-20">

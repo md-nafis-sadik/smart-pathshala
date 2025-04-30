@@ -112,25 +112,28 @@ export const testimonialsData = [
   {
     id: 1,
     message:
-      "I've been working with this team closely for a few years now and they have went above and beyond to bring my vision to life. Very talented and I look forward to continuing to make even more ideas a reality.",
+      "Smart Pathshala has completely transformed our school’s management. From student enrollment to fee collection, everything is now automated. It saves us time, reduces errors, and makes administration effortless!",
     avatar: images.avatar1,
-    name: "Benjamin Oakes",
-    title: "Founder - TechV",
+    name: "Jubaer Nuhas",
+    title: "Game-Changer for Our School!",
+    designation: "Head Teacher, Sunrise Public School"
   },
   {
     id: 2,
     message:
-      "The dedication and creativity of this team are unmatched. They exceeded my expectations and delivered exceptional results every time.",
+      "The Smart Pathshala mobile app is a lifesaver! Teachers can track student progress, parents stay updated on attendance and grades, and communication between all parties has never been smoother.",
     avatar: images.avatar2,
-    name: "Sophia Lee",
-    title: "CEO - InnovateNow",
+    name: "Toushik Hasan",
+    title: "Great for Teachers & Parents",
+    designation: "Teacher, Bluebell High School"
   },
   {
     id: 3,
     message:
-      "Working with this team has been an incredible experience. Their ability to bring ideas to life is truly remarkable, and I couldn't be happier with the results.",
+      "Smart Pathshala has completely transformed our school’s management. From student enrollment to fee collection, everything is now automated. It saves us time, reduces errors, and makes administration effortless!",
     avatar: images.avatar1,
-    name: "Michael Harper",
-    title: "CTO - FutureTech Solutions",
+    name: "Jubaer Nuhas",
+    title: "Game-Changer for Our School!",
+    designation: "Head Teacher, Sunrise Public School"
   },
 ];

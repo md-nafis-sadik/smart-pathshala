@@ -27,7 +27,7 @@ const HeroHome = () => {
         <p className="mt-5 text-base md:text-lg font-light text-gray-700">A Powerful School & College Management System Designed to Streamline Administration, Enhance Learning, and Connect Everyone Seamlessly</p>
 
         <div className="mt-10 flex items-center justify-center lg:justify-start gap-2 md:gap-4">
-          <Button className="w-fit group bg-skyish-700 py-2.5">
+          <Button className="w-fit group bg-skyish-700 hover:bg-sky-600 py-2.5">
             <span className="!leading-none py-1">Get Started</span>
           </Button>
         </div>

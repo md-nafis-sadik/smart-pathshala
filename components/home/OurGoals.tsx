@@ -27,15 +27,15 @@ export default function OurGoals() {
       <section className="py-10 md:py-20 xl:py-28 bg-skyish-200">
         <div className="containerX mx-auto text-center">
           <h2 className=" text-3xl md:text-[50px] xl:text-[64px] font-bold text-gray-900">Our Goals</h2>
-          <p className="mt-4 text-gray-600 text-base">
+          <p className="mt-7 text-gray-600 text-base">
             Setting the Path for a Smarter, More Connected Future in Education
           </p>
   
-          <div className="mt-16 grid gap-6 sm:grid-cols-1 md:grid-cols-2">
+          <div className="mt-16 grid gap-8 sm:grid-cols-1 md:grid-cols-2">
             {goals.map((goal, index) => (
               <div
                 key={index}
-                className={`rounded-2xl p-7 bg-white shadow-md  transition-transform hover:scale-105 hover:shadow-lg`}
+                className={`rounded-2xl p-7 bg-white transition-transform hover:scale-105`}
               >
                 <div className="w-full flex justify-center lg:justify-start">
                 <div
@@ -44,10 +44,10 @@ export default function OurGoals() {
                   {goal.icon}
                 </div>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 text-center lg:text-left">
+                <h3 className="text-[24px] font-bold text-gray-900 text-center lg:text-left">
                   {goal.title}
                 </h3>
-                <p className="mt-3 text-gray-600 text-base text-center lg:text-left">{goal.description}</p>
+                <p className="mt-3 text-[#888] text-base text-center lg:text-left">{goal.description}</p>
                 <div className="mt-6 mb-2 w-full flex justify-center lg:justify-start">
                   <a
                     href="#"

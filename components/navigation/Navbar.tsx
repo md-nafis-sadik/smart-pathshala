@@ -97,34 +97,20 @@ const Navbar: FC = () => {
         <div className="flex flex-row items-center gap-2 md:gap-3">
           {/* ON/OFF MUSIC */}
      
-              <Button className="hidden md:flex bg-yellowish-700 flex_center gap-2 group ps-3 md:px-5 font-semibold text-text-800 text-sm">
+              <Button className="hidden md:flex bg-yellowish-700 hover:bg-amber-500 flex_center gap-2 group ps-3 md:px-5 font-semibold text-text-800 text-sm">
                 <span className="!leading-none">School Login</span>
               </Button>
 
 
           {/* GET IN TOUCH */}
-          <Button className="hidden md:flex bg-skyish-700 flex_center gap-2 group ps-3 md:px-5 font-semibold text-white text-sm">
+          <Button className="hidden md:flex bg-skyish-700 hover:bg-sky-600 flex_center gap-2 group ps-3 md:px-5 font-semibold text-white text-sm">
                 <span className="!leading-none">Register Now</span>
               </Button>
 
           {/* MOBILE MENU */}
-          <GradientButton
-            className={cn("flex_center gap-2 group ps-[10px] md:px-3")}
-            containerClassName="block min-[1160px]:hidden"
-            onClick={() => setIsSheetOpen(true)}
-          >
-            <MenuIcon className="!h-5 !w-5 !shrink-0" />
-            <span
-              className={cn(
-                pathname === routes.homepage.link
-                  ? "text-white"
-                  : "text-text-900",
-                "font-scoutcond text-lg font-bold text-white uppercase !leading-[0.9] group-hover:text-white transition_common"
-              )}
-            >
-              
-            </span>
-          </GradientButton>
+          
+            <div className="lg:hidden flex cursor-pointer" onClick={() => setIsSheetOpen(true)}><MenuIcon className="!h-5 !w-5 !shrink-0" color="black" /></div>
+          
         </div>
       </div>
 

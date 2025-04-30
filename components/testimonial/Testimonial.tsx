@@ -1,12 +1,11 @@
 "use client";
-import SectionHeader from "@/components/common/SectionHeader";
+
+import { useState } from 'react';
 import TestimonialCard from "./TestimonialCard";
 import useEmblaCarousel from "embla-carousel-react";
-import { cn } from "@/lib/utils";
 import useEmblaButtons from "@/hooks/EmblaCarousel";
 import {
   LeftSignIcon,
-  QuoteStraightIcon,
   RightSignIcon,
 } from "@/services/assets/svgs";
 import Autoplay from "embla-carousel-autoplay";
@@ -19,26 +18,29 @@ const Testimonial = () => {
     Autoplay(autoplayOptions),
   ]);
   const { onPrevButtonClick, onNextButtonClick } = useEmblaButtons(emblaApi);
+  const [hovered, setHovered] = useState(false);
 
   return (
     <div className="containerX w-full py-20 md:py-[120px] relative">
-      <div className="w-fit relative mx-auto h-fit">
-        <h2 className="text-center text-3xl md:text-[50px] font-bold text-gray-900">
+      <div>
+    <h2 className="text-center text-3xl md:text-[50px] xl:text-[64px] font-bold text-gray-900">Testimonials</h2>
+          <p className="text-center mt-7 text-gray-600 text-base">
           Trusted by Schools, Teachers & Administrators Across Bangladesh
-        </h2>
-      </div>
+          </p>
+          </div>
 
       {/* CAROUSEL */}
       <div className="w-full overflow-x-hidden">
         <div className="w-full" ref={emblaRef}>
           <div className="flex gap-3 md:gap-6 lg:gap-8 w-full">
-            {testimonialsData.map(({ name, title, avatar, id, message }) => (
+            {testimonialsData.map(({ name, title, avatar, id, message,designation }) => (
               <TestimonialCard
                 key={id}
                 name={name}
                 title={title}
                 avatar={avatar}
                 message={message}
+                designation={designation}
               />
             ))}
           </div>
@@ -49,15 +51,17 @@ const Testimonial = () => {
       <div className="hidden md:flex_center gap-8 mt-10 md:mt-[60px]">
         <button
           onClick={onPrevButtonClick}
-          className="btn bg-white h-10 md:h-[60px] w-10 md:w-[60px] border border-natural-300 hover:bg-main-500 rounded-full flex_center"
+          onMouseEnter={() => setHovered(true)}
+          onMouseLeave={() => setHovered(false)}
+          className="btn bg-white h-10 md:h-[60px] w-10 md:w-[60px] border hover:text-white border-natural-50 shadow-lg hover:bg-skyish-700 rounded-full flex_center"
         >
-          <LeftSignIcon className="h-6 w-6 group-hover:text-white" />
+          <LeftSignIcon className="h-6 w-6 " color= {hovered ? '#FFFFFF' : '#0C0C0C'}  />
         </button>
         <button
           onClick={onNextButtonClick}
-          className="btn bg-white h-10 md:h-[60px] w-10 md:w-[60px] border border-natural-300 hover:bg-main-500 rounded-full flex_center"
+          className="btn bg-white h-10 md:h-[60px] w-10 md:w-[60px] border hover:text-white border-natural-50 shadow-lg hover:bg-skyish-700 rounded-full flex_center"
         >
-          <RightSignIcon className="h-6 w-6 group-hover:text-white" />
+          <RightSignIcon className="h-6 w-6 " color= {hovered ? '#FFFFFF' : '#0C0C0C'}  />
         </button>
       </div>
     </div>

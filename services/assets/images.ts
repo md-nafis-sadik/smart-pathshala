@@ -9,6 +9,7 @@ export { default as Sponsor1 } from "@/public/images/sponsors/institute-1.png";
 export { default as Sponsor2 } from "@/public/images/sponsors/institute-2.png";
 export { default as Sponsor3 } from "@/public/images/sponsors/institute-3.png";
 export { default as LogoBook } from "@/public/images/logo-book.png";
+export { default as LogoWhite } from "@/public/images/logo-white.png";
 export { default as Sponsor4 } from "@/public/images/sponsors/institute-4.png";
 export { default as LaptopProject } from "@/public/images/project/Laptop.png";
 export { default as FeatureImage } from "@/public/images/project/features-mobile.png";
