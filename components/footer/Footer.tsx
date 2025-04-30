@@ -7,13 +7,18 @@ import {
   AtTheRateIcon,
   CallIcon,
   DividerFadingDashes,
+  FacebookLineIcon,
+  InstaLineIcon,
+  LinkedInLineIcon,
+  TwitterLineIcon,
+  YoutubeLineIcon,
 } from "@/services/assets/svgs";
 import { footerData } from "@/services/data";
 import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#082237] py-10 md:py-20">
+    <footer className="bg-[#082237] py-10 md:py-20 border-b border-[#0F456B]">
       <div className="containerX">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 min-[1120px]:grid-cols-4 gap-10 md:gap-6">
           {/* Inquiries */}
@@ -96,8 +101,13 @@ const Footer = () => {
          
         </div>
 
+
+        
+
       
       </div>
+
+
     </footer>
   );
 };

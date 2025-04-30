@@ -17,4 +17,7 @@ export { default as BenifitsImage1 } from "@/public/images/project/benifits1.png
 export { default as BenifitsImage2 } from "@/public/images/project/benifits2.png";
 export { default as avatar1 } from "@/public/images/project/avatar-1.png";
 export { default as avatar2 } from "@/public/images/project/avatar-2.png";
+export { default as blogImage1 } from "@/public/images/blog/blogImage1.jpg";
+export { default as blogImage2 } from "@/public/images/blog/blogImage2.jpg";
+export { default as blogImage3 } from "@/public/images/blog/blogImage3.jpg";
 

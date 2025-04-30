@@ -6,6 +6,7 @@ import IntroHome from "@/components/home/IntroHome";
 import FeaturesHome from "@/components/home/FeaturesHome";
 import OurGoals from "@/components/home/OurGoals";
 import Benifits from "@/components/home/Benefits";
+import BlogSection from "@/components/home/BlogSection";
 
 const HomePage = () => {
   return (
@@ -29,7 +30,7 @@ const HomePage = () => {
       <FeaturesHome />
       <Benifits/>
       <Testimonial />
-
+<BlogSection/>
 
       <FAQ />
     </main>

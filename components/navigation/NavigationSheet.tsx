@@ -79,8 +79,8 @@ const NavigationSheet: FC<IFNavigationSheetProps> = ({
         </div>
 
         {/* CONNECT & SOCIALS */}
-        <div className="flex flex-col items-center gap-6 mt-8 md:mt-[60px] bg-white">
-        <Button className="flex bg-yellowish-700 hover:bg-amber-500 flex_center gap-2 group ps-3 md:px-5 font-semibold text-text-800 text-sm px-6 py-3">
+        <div className="flex flex-col items-center gap-6 mt-8 md:mt-[60px] bg-transparent">
+        <Button className="flex bg-yellowish-700 hover:bg-amber-500 flex_center gap-2 group ps-3 md:px-5 font-semibold text-text-800 text-sm px-6 py-3 border-none">
                 <span className="!leading-none px-4">School Login</span>
               </Button>
 

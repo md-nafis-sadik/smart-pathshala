@@ -8,6 +8,7 @@ import Navbar from "@/components/navigation/Navbar";
 import { cn } from "@/lib/utils";
 import "@/styles/app.css";
 import "@/styles/globals.css";
+import { FacebookLineIcon, InstaLineIcon, LinkedInLineIcon, TwitterLineIcon, YoutubeLineIcon } from "@/services";
 
 export const metadata: Metadata = {
   title: "Smart Pathshala",
@@ -38,7 +39,18 @@ const RootLayout = ({
         {children}
         <LetsTalk />
         <Footer />
-
+        <div className="bg-[#082237]">
+      <div className="flex flex-col lg:flex-row items-center justify-between  containerX py-6 ">
+          <div className="text-white pb-5 lg:pb-0">© Copyright 2025 <a href="/" className="text-skyish-700">Smart Pathshala</a> | All rights are reserved</div>
+          <div className="flex items-center gap-4">
+            <div><a href="/"><FacebookLineIcon/></a></div>
+            <div><a href="/"><TwitterLineIcon/></a></div>
+            <div><a href="/"><InstaLineIcon/></a></div>
+            <div><a href="/"><LinkedInLineIcon/></a></div>
+            <div><a href="/"><YoutubeLineIcon/></a></div>
+          </div>
+        </div>
+        </div>
       </body>
     </html>
   );
