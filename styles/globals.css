@@ -115,3 +115,25 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+/* Add perspective container */
+.image-container {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+/* Add to your Image component's wrapper */
+.tilt-image {
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.accordion-content {
+  transition: height 300ms ease;
+}
+
+/* Ensure initial state */
+.accordion-item {
+  opacity: 0;
+  transform: translateY(20px);
+}

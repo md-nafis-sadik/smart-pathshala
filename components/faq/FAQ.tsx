@@ -1,10 +1,6 @@
 'use client'
 
-
-
-import { useState, useRef } from "react";
-import SectionHeader from "@/components/common/SectionHeader";
-import SectionSubHeader from "@/components/common/SectionSubHeader";
+import { useState, useRef, useEffect } from "react";
 import {
   Accordion,
   AccordionContent,
@@ -14,6 +10,12 @@ import {
 import { cn } from "@/lib/utils";
 import { faqData } from "@/services/data";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import TextFadeIn from "../animations/TextFadeIn";
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
+
+
+gsap.registerPlugin(ScrollTrigger);
 
 const categories = [
   "General Information",
@@ -24,8 +26,11 @@ const categories = [
 ];
 
 const FAQ = () => {
+
   const [selectedCategory, setSelectedCategory] = useState(categories[0]);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const accordionRef = useRef<HTMLDivElement>(null);
 
   const filteredFaqs = faqData.filter((item) => item.category === selectedCategory);
 
@@ -38,17 +43,65 @@ const FAQ = () => {
     }
   };
 
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      if (!sectionRef.current || !accordionRef.current) return;
+  
+      // Section animation
+      gsap.fromTo(sectionRef.current,
+        { opacity: 0, y: 50 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: 'top 80%',
+          }
+        }
+      );
+  
+      // Accordion items animation
+      gsap.fromTo(accordionRef.current.querySelectorAll('.accordion-item'),
+        {
+          opacity: 0,
+          y: 20,
+        },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.6,
+          stagger: 0.1,
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: accordionRef.current,
+            start: 'top 80%',
+            toggleActions: 'play none none none',
+          }
+        }
+      );
+  
+      // 👇 Refresh ScrollTrigger
+      ScrollTrigger.refresh();
+    }, sectionRef);
+  
+    return () => ctx.revert();
+  }, [selectedCategory]);
+
   return (
-    <section className="bg-white flex_center flex-col w-full py-20">
+    <section className="bg-white flex_center flex-col w-full py-16 lg:py-20">
       <div>
-        <h2 className="text-center text-3xl md:text-[50px] xl:text-[64px] font-bold text-gray-900">FAQ</h2>
-        <p className="text-center mt-6 text-gray-600 text-base">
+        <div className="flex justify-center w-full"><TextFadeIn text="FAQ" className=" text-2xl md:text-4xl lg:text-[48px] font-[700] !leading-[1.2] text-text-850 tracking-wide mb-6"
+        /></div>
+        <p className="text-[#4f4f4f] text-xs md:text-sm lg:text-lg mb-7 lg:mb-10 font-medium leading-relaxed
+        transition-opacity duration-1000 ease-out text-center">
           Find answers to common questions about Smart Pathshala.
         </p>
       </div>
 
       {/* Category Tabs with Scroll */}
-      <div className="relative w-full containerX mt-10">
+      <div className="relative w-full containerX mt-6 lg:mt-10">
         
         <div
           ref={scrollRef}
@@ -59,7 +112,7 @@ const FAQ = () => {
               key={cat}
               onClick={() => setSelectedCategory(cat)}
               className={cn(
-                "flex-shrink-0 px-5 lg:px-8 py-2.5 lg:py-4 rounded-full border text-sm font-medium transition-all",
+                "flex-shrink-0 px-5 lg:px-8 py-2.5 lg:py-4 rounded-full border text-xs lg:text-sm font-medium transition-all",
                 selectedCategory === cat
                   ? "bg-skyish-700 text-white"
                   : "bg-white border-gray-300 text-gray-700 hover:bg-gray-100"
@@ -73,7 +126,7 @@ const FAQ = () => {
       </div>
 
       {/* Accordion */}
-      <div className="containerX mt-10">
+      <div className="containerX mt-10"  ref={accordionRef}>
         <Accordion
           type="single"
           collapsible
@@ -81,7 +134,7 @@ const FAQ = () => {
           className="w-full mx-auto flex flex-col gap-3"
         >
           {filteredFaqs.map(({ question, answer }, index) => (
-            <AccordionItem key={index} value={`item-${index}`}>
+            <AccordionItem key={index} value={`item-${index}`} >
               <AccordionTrigger
                 className={cn(
                   "text-sm md:text-xl font-medium md:font-bold text-black !leading-[1.4] md:!leading-[1.1] text-start font-inter"

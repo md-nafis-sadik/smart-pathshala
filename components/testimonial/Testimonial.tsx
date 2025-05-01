@@ -4,10 +4,6 @@ import { useState } from 'react';
 import TestimonialCard from "./TestimonialCard";
 import useEmblaCarousel from "embla-carousel-react";
 import useEmblaButtons from "@/hooks/EmblaCarousel";
-import {
-  LeftSignIcon,
-  RightSignIcon,
-} from "@/services/assets/svgs";
 import Autoplay from "embla-carousel-autoplay";
 import { testimonialsData } from "@/services/data/shared.data";
 import { ChevronLeft, ChevronRight } from 'lucide-react';
@@ -23,18 +19,21 @@ const Testimonial = () => {
 
   return (
     <div className="containerX w-full py-20 md:py-[120px] relative">
+
       <div>
-    <h2 className="text-center text-3xl md:text-[50px] xl:text-[64px] font-bold text-gray-900">Testimonials</h2>
-          <p className="text-center mt-7 text-gray-600 text-base">
+        <div className="w-full text-2xl md:text-4xl lg:text-[48px] font-[700] !leading-[1.2] text-text-850 tracking-wide mb-4 lg:mb-6 text-center"
+        >Testimonial</div>
+        <p className="text-[#4f4f4f] text-xs md:text-sm lg:text-lg mb-2 lg:mb-10 font-medium leading-relaxed
+        transition-opacity duration-1000 ease-out text-center">
           Trusted by Schools, Teachers & Administrators Across Bangladesh
-          </p>
-          </div>
+        </p>
+      </div>
 
       {/* CAROUSEL */}
       <div className="w-full overflow-x-hidden">
         <div className="w-full" ref={emblaRef}>
           <div className="flex gap-3 md:gap-6 lg:gap-8 w-full">
-            {testimonialsData.map(({ name, title, avatar, id, message,designation }) => (
+            {testimonialsData.map(({ name, title, avatar, id, message, designation }) => (
               <TestimonialCard
                 key={id}
                 name={name}

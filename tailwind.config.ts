@@ -9,6 +9,8 @@ export default {
   ],
   theme: {
     extend: {
+      scrollBehavior: ['responsive'],
+      scrollSnapType: ['responsive'],
       fontFamily: {
         inter: ["var(--font-inter)"],
         bonbon: ["var(--font-bonbon)"],

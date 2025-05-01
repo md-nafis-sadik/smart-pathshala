@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState } from "react";
 import TextFadeIn from "../animations/TextFadeIn";
-import CountUp from 'react-countup';
 
 
 function useCountUp(start: number, end: number, duration: number, trigger: boolean) {
