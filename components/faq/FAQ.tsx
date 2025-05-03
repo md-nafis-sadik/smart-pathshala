@@ -89,6 +89,53 @@ const FAQ = () => {
     return () => ctx.revert();
   }, [selectedCategory]);
 
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el) return;
+  
+    let isDown = false;
+    let startX: number;
+    let scrollLeft: number;
+  
+    const handleMouseDown = (e: MouseEvent) => {
+      isDown = true;
+      el.classList.add('cursor-grabbing');
+      startX = e.pageX - el.offsetLeft;
+      scrollLeft = el.scrollLeft;
+    };
+  
+    const handleMouseLeave = () => {
+      isDown = false;
+      el.classList.remove('cursor-grabbing');
+    };
+  
+    const handleMouseUp = () => {
+      isDown = false;
+      el.classList.remove('cursor-grabbing');
+    };
+  
+    const handleMouseMove = (e: MouseEvent) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - el.offsetLeft;
+      const walk = (x - startX) * 1.5; // scroll-fast multiplier
+      el.scrollLeft = scrollLeft - walk;
+    };
+  
+    el.addEventListener('mousedown', handleMouseDown);
+    el.addEventListener('mouseleave', handleMouseLeave);
+    el.addEventListener('mouseup', handleMouseUp);
+    el.addEventListener('mousemove', handleMouseMove);
+  
+    return () => {
+      el.removeEventListener('mousedown', handleMouseDown);
+      el.removeEventListener('mouseleave', handleMouseLeave);
+      el.removeEventListener('mouseup', handleMouseUp);
+      el.removeEventListener('mousemove', handleMouseMove);
+    };
+  }, []);
+  
+
   return (
     <section className="bg-white flex_center flex-col w-full py-16 lg:py-20">
       <div>
@@ -105,14 +152,14 @@ const FAQ = () => {
         
         <div
           ref={scrollRef}
-          className="flex overflow-x-auto no-scrollbar space-x-4 lg:space-x-8 w-[95%] lg:w-full  mx-auto scroll"
+          className="flex overflow-x-auto no-scrollbar space-x-4 lg:space-x-11 w-[95%] lg:w-full  mx-auto scroll"
         >
           {categories.map((cat) => (
             <button
               key={cat}
               onClick={() => setSelectedCategory(cat)}
               className={cn(
-                "flex-shrink-0 px-5 lg:px-8 py-2.5 lg:py-4 rounded-full border text-xs lg:text-sm font-medium transition-all",
+                "flex-shrink-0 px-5 w-40 lg:w-52 lg:px-8 py-2.5 lg:py-4 rounded-full border text-xs lg:text-sm font-medium transition-all",
                 selectedCategory === cat
                   ? "bg-skyish-700 text-white"
                   : "bg-white border-gray-300 text-gray-700 hover:bg-gray-100"

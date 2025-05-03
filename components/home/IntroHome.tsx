@@ -35,10 +35,17 @@ const IntroHome = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [inView, setInView] = useState(false);
 
+  const [hasAnimated, setHasAnimated] = useState(false);
+
   // Observer setup
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => setInView(entry.isIntersecting),
+      ([entry]) => {
+        if (entry.isIntersecting && !hasAnimated) {
+          setInView(true);
+          setHasAnimated(true); 
+        }
+      },
       { threshold: 0.3 }
     );
 
@@ -48,7 +55,7 @@ const IntroHome = () => {
     return () => {
       if (el) observer.unobserve(el);
     };
-  }, []);
+  }, [hasAnimated]);
 
   // Counters
   const studentCount = useCountUp(0, 50, 2, inView);
