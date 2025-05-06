@@ -24,18 +24,16 @@ const NavigationSheet: FC<IFNavigationSheetProps> = ({
   closeSheet,
   pathname,
 }) => {
-  console.log("isSheetOpen", isSheetOpen, "closeSheet", closeSheet);
-
   return (
     <Sheet open={isSheetOpen} onOpenChange={closeSheet}>
       <SheetContent showCrossIcon={false} className=" select-none">
         <SheetHeader className="hidden" />
 
         <div className="bg-white flex_center justify-end py-3 px-6 border-b ">
-          
-            <div className="lg:hidden flex cursor-pointer" onClick={closeSheet}><CrossIcon color="black" className="!h-5 !w-5 !shrink-0" /></div>
-            
-          
+
+          <div className="lg:hidden flex cursor-pointer" onClick={closeSheet}><CrossIcon color="black" className="!h-5 !w-5 !shrink-0" /></div>
+
+
         </div>
 
         <div className="flex flex-col items-center w-full mt-6 mb-10 bg-white">
@@ -50,9 +48,9 @@ const NavigationSheet: FC<IFNavigationSheetProps> = ({
                 <span
                   className={cn(
                     pathname === link &&
-                      (pathname === routes.homepage.link
-                        ? "navbar-btn-gradient-dark"
-                        : "navbar-btn-gradient-lite"),
+                    (pathname === routes.homepage.link
+                      ? "navbar-btn-gradient-dark"
+                      : "navbar-btn-gradient-lite"),
                     "block navbar-btn-gradient absolute w-full h-1/2 bottom-0 left-1/2 -translate-x-1/2 z-[1]"
                   )}
                 />
@@ -80,15 +78,15 @@ const NavigationSheet: FC<IFNavigationSheetProps> = ({
 
         {/* CONNECT & SOCIALS */}
         <div className="flex flex-col items-center gap-6 mt-8 md:mt-[60px] bg-transparent">
-        <Button className="flex bg-yellowish-700 hover:bg-amber-500 flex_center gap-2 group ps-3 md:px-5 font-semibold text-text-800 text-sm px-6 py-3 border-none">
-                <span className="!leading-none px-4">School Login</span>
-              </Button>
+          <Button className="flex bg-yellowish-700 hover:bg-amber-500 flex_center gap-2 group ps-3 md:px-5 font-semibold text-text-800 text-sm px-6 py-3 border-none">
+            <span className="!leading-none px-4">School Login</span>
+          </Button>
 
 
           {/* GET IN TOUCH */}
           <Button className="flex bg-skyish-700 hover:bg-sky-600 flex_center gap-2 group ps-3 md:px-5 font-semibold text-white text-sm px-6 py-3">
-                <span className="!leading-none px-4">Register Now</span>
-              </Button>
+            <span className="!leading-none px-4">Register Now</span>
+          </Button>
 
           <div className="flex flex-row items-center gap-3">
             {socialsData.map(({ link, icon }, index) => (
