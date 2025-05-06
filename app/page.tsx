@@ -26,11 +26,11 @@ const HomePage = () => {
       <EffortLessManagement />
 
       <OurGoals />
-      
+
       <FeaturesHome />
-      <Benifits/>
+      <Benifits />
       <Testimonial />
-<BlogSection/>
+      <BlogSection />
 
       <FAQ />
     </main>
