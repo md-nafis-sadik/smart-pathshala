@@ -26,8 +26,9 @@ const RootLayout = ({
 }>) => {
 
   return (
-    <html lang="en" data-arp>
+    <html lang="en" data-arp suppressHydrationWarning>
       <body
+        suppressHydrationWarning
         className={cn(
           inter.variable,
           bonbon.variable,
