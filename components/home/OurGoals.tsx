@@ -3,7 +3,7 @@
 import { useRef, useEffect } from 'react';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import { ConnectionIcon } from "@/services";
+import { ConnectionIcon, ComputerIcon } from "@/services";
 import TextFadeIn from "../animations/TextFadeIn";
 
 // Define TypeScript types
@@ -26,7 +26,7 @@ export default function OurGoals() {
       title: "Digitizing Education Management",
       description:
         "Our Mission is to Transform Educational Institution Management by Replacing Traditional Methods with a Smart, Digital, and Efficient System That Simplifies Operations and Boosts Performance.",
-      icon: <img src="/images/computer-icon.png" alt="Computer icon" />,
+      icon: <ComputerIcon/>,
       bg: "bg-sky-100",
       borderColor: "border-sky-200",
     },
