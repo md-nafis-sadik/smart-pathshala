@@ -26,7 +26,7 @@ const LetsTalkHome = () => {
               type="email"
               placeholder="Enter your email address"
               className={cn(
-                "text-xs md:text-sm lg::text-base font-normal !leading-[1.3] bg-transparent border-none outline-none text-white placeholder:bg-clip-text placeholder:text-gray-400 h-full font-inter max-w-[148px] md:max-w-full"
+                "text-xs md:text-sm lg:text-base font-normal !leading-[1.3] bg-transparent border-none outline-none text-black placeholder:text-gray-400 h-full font-inter max-w-[148px] md:max-w-full"
               )}
             />
             <Button

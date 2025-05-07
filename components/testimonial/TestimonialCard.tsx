@@ -18,8 +18,10 @@ const TestimonialCard = ({
 }: IFTestimonialCard) => {
   return (
     <div className="flex rounded-2xl bg-[#F0F8FF] flex-col mt-10 md:mt-20 flex-[0_0_100%] md:flex-[0_0_calc(50%-12px)] select-none p-6 lg:p-8">
-      <div className="w-full flex justify-start"><QuoteIconv2 className="w-5 h-5 md:w-[33px] md:h-[27px] text-primary-500 mb-6" /></div>
-      <div className="text-base md:text-lg font-semibold text-left mb-3 twxt-[#191919]">{title}</div>
+      <div className="w-full flex justify-start">
+        <QuoteIconv2 className="w-5 h-5 md:w-[33px] md:h-[27px] text-primary-500 mb-6" />
+      </div>
+      <div className="text-base md:text-lg font-semibold text-left mb-3 text-[#191919]">{title}</div>
       <div className="text-xs md:text-sm lg:text-base !leading-[1.6] text-left max-w-full text-[#888888]">
         {message}
       </div>

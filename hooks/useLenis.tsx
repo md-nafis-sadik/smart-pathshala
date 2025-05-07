@@ -24,7 +24,6 @@ const useLenis = () => {
         };
     }, []);
 
-    return lenisRef.current;
 };
 
 export default useLenis;

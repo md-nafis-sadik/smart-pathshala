@@ -21,10 +21,10 @@ const Testimonial = () => {
     <div className="containerX w-full py-20 md:py-[120px] relative">
 
       <div>
-        <div className="w-full text-2xl md:text-4xl lg:text-[48px] font-[700] !leading-[1.2] text-text-850 tracking-wide mb-4 lg:mb-6 text-center"
-        >Testimonial</div>
-        <p className="text-[#4f4f4f] text-xs md:text-sm lg:text-lg mb-2 lg:mb-10 font-medium leading-relaxed
-        transition-opacity duration-1000 ease-out text-center">
+        <div className="w-full text-2xl md:text-4xl lg:text-[48px] font-[700] !leading-[1.2] text-text-850 tracking-wide mb-4 lg:mb-6 text-center">
+          Testimonial
+        </div>
+        <p className="text-[#4f4f4f] text-xs md:text-sm lg:text-lg mb-2 lg:mb-10 font-medium leading-relaxed transition-opacity duration-1000 ease-out text-center">
           Trusted by Schools, Teachers & Administrators Across Bangladesh
         </p>
       </div>
